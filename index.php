@@ -28,8 +28,11 @@ $headers=explode(" ",curl_exec($cURL));
 $status=$headers[1];
 if($status == "200"){
 	echo "Site is up!";
-}else{
-	echo "Site is not up or redirecting!";
+}else if($status == "301" || $status == "302"){
+	echo "Site is redirecting!";
+}
+else{
+	echo "Site is down!";
 }
 ?>
 </body>
