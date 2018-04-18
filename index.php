@@ -4,6 +4,7 @@ $siteURL=$_GET['site'];
 <html>
 <head>
 	<title>Down Detector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		form{
 			text-align: center;
